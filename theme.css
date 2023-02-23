@@ -1,34 +1,31 @@
 /**
- * @name Exponent
- * @author Saltssaumure
- * @authorLink https://github.com/Saltssaumure
- * @description A Windows XP style theme built for BetterDiscord.
- * @version 1.1
- * @invite uy8nKQVatp
- * @source https://github.com/Saltssaumure/xp-discord-theme
- * @donate https://ko-fi.com/saltssaumure
+ * @name SimplyDark
+ * @author Gibbu#1211
+ * @version 3.0.0
+ * @description A sharp and simple theme for Discord
+ * @source https://github.com/DiscordStyles/SimplyDark
+ * @invite ZHthyCw
+ * @website https://gibbu.me/
 */
 
-/*
-                                                Made by:
- _______  _______  _    _________ _______  _______  _______           __   __           _______  _______
-(  ____ \(  ___  )( \   \__   __/(  ____ \(  ____ \(  ___  )|\     /|(  \ /  )|\     /|(  ____ )(  ____ \
-| (____\/| (___) || |      | |   | (____\/| (____\/| (___) || |   | || || || || |   | || (____)|| (__  \/
-(_____  )|  ___  || |      | |   (_____  )(_____  )|  ___  || |   | || |(_)| || |   | || __  __)|  __)
-/\____) || )   ( || (____/\| |   /\____) |/\____) || )   ( || (___) || )   ( || (___) || ) \ \__| (____/\
-\_______)|/     \|(_______/)_(   \_______)\_______)|/     \|(_______)|/     \|(_______)|/   \__/(_______/
-                                         Licensed under GPL-3.0
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+@import url("https://discordstyles.github.io/SimplyDark/dist/SimplyDark.css");
 
-Discord: Saltssaumure#7557
-GitHub: https://github.com/Saltssaumure/xp-discord-theme
-Join Salt's Discord Themes server: https://discord.gg/uy8nKQVatp
-*/
+/* Black Box user tags */
+@import url('https://monstrousdev.github.io/themes/addons/user-tags.css');
 
-@import url("https://saltssaumure.github.io/xp-discord-theme/xp.min.css");
+/* Old Windows titlebar - remove this @import if you wish to use default titlebar */
+@import url("https://gibbu.github.io/BetterDiscord-Themes/addons/windows-titlebar.css");
 
-:root
-{
-    --background-image: url(https://saltssaumure.github.io/xp-discord-theme/img/bliss.jpg);  /* Background image. Values: any image link encased in url(). */
-    --bsod-color: navy;  /* BSOD background colour. Values: any valid keyword/RGBA/hex etc. colour. */
-    --bsod-text: "A problem has been detected and Windows has been shut down to prevent damage to your computer. \A\A A clock interrupt was not received on a secondary processor within the allocated time interval. \A\A If this is the first time you've seen this stop error screen, restart your computer. If this screen appears again, follow these steps: \A\A Check to make sure any new hardware or software is properly installed. If this is a new installation, ask your hardware or software manufacturer for any Windows updates you might need. \A\A If problems continue, disable or remove any newly installed hardware or software. Disable BIOS memory options such as caching or shadowing. If you need to use Safe Mode to remove or disable components, restart your computer, press F8 to select Advanced Startup Options, and then throw away the whole computer. \A\A Technical information: \A\A *** STOP: USING_DISCORD \A\A ***       discord.exe - Address DEADBEEF base at 8BADF00D, DateStamp 1337C0D3 \A\A\A\A\A\A\A\A\A\A Collecting data for crash dump ... \A Initializing disk for crash dump ... \A Beginning dump of all your belongings ... \A Dumping physical memory to disk: 100% \A Physical memory dump complete. \A Contact your system administrator or technical support group for further assistance.";
+:root {
+	--hue: 0; /* The hue of Discord | Default: 0 */
+	--saturation: 0%; /* The saturation of --hue | MUST END IN % | Default: 0% */
+	--lightness: 8%; /* The lightness of both --hue and --saturation | MUST END IN % | Default: 8% */
+
+	--accent: 59, 130, 246; /* Custom colour used for pings, mentions, links, discord blurple */
+
+	--avatar-shape: 0%; /* The shape of avatars | MUST END IN % | Default: 0% */
+	--server-shape: 0%; /* The shape of server avatars | MUST END IN % | Default: 0% */
+
+	--font: 'Roboto'; /* Custom font */
 }
